@@ -13,7 +13,7 @@ print(requests.headers)
 print("="*30)
 
 # Retorna o código HTML da página:
-print(requests.content)
+'''print(requests.content)'''
 
 # Atribui uma variável ao código e adiciona o BeautifulSoup ao código:
 content = requests.content
