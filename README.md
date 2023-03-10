@@ -6,5 +6,5 @@
   + Requests
  ### Metas para melhorar o código daqui para frente:
   - [ ] **Aprimorar o código conforme aprendizado**
-  - [ ] **Aplicar Excel**
+  - [X] **Aplicar Excel**
   - [ ] **Aplicar uma interface gráfica utilizando Flask**
