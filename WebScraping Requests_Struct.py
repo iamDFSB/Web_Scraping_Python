@@ -1,4 +1,4 @@
-# Impostando as Bibliotecas:
+# Importando as Bibliotecas:
 import requests
 from bs4 import BeautifulSoup
 
