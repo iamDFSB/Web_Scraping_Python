@@ -1,5 +1,6 @@
 # Importando as Bibliotecas:
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup
 
 # Definindo o site do Mercado Livre para Scraping
@@ -48,3 +49,10 @@ print(f'\033[34mExistem {len(listaItems)} itens no total')
 for i in range(len(listaItems)):
     print(f'\033[4;32m→\033[m {listaItems[i].text} \033[4;32m←\033[m')
 print(len(listaItems))
+
+# Criando Tabela:
+tabela = pd.DataFrame(listaItems,columns=['Produto','Preço'])
+print(tabela)
+
+# Upload de arquivo:
+tabela.to_excel('arquivo_scraping_teste.xlsx',index = False)
